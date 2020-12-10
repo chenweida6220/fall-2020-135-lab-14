@@ -13,7 +13,7 @@ template<class T>
 MyVector<T>::MyVector(int size) {
   currentSize = size;
   if (size > maxSize) {
-    maxSize = size;
+    maxSize = size + 10;
     myVec = new T[size];
   }
 }
@@ -37,7 +37,7 @@ template<class T>
 void MyVector<T>::push_back(T item) {
   currentSize += 1;
 	if (currentSize > maxSize) {
-		maxSize = currentSize;
+		maxSize = currentSize + 10;
 	}
 	myVec[currentSize - 1] = item;
 }
@@ -52,7 +52,7 @@ void MyVector<T>::pop_back(int n) {
 
 template<class T>
 void MyVector<T>::pop_back() {
-  pop_back(1);
+  pop_back(size() - 1);
 }
 
 template<class T>
