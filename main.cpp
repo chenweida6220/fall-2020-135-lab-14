@@ -20,6 +20,10 @@ int main() {
   cout << "Size: " << vec.size() << endl;
   cout << "Capacity: " << vec.capacity() << endl;
   cout << "Empty: " << vec.empty() << endl;
+  for (int i = 0; i < vec.size(); i++) {
+    cout << vec[i] << " ";
+  }
+  cout << endl;
 
   cout << endl;
 
@@ -52,4 +56,8 @@ int main() {
   cout << "Size: " << vec.size() << endl;
   cout << "Capacity: " << vec.capacity() << endl;
   cout << "Empty: " << vec.empty() << endl;
+  for (int i = 0; i < vec.size(); i++) {
+    cout << vec[i] << " ";
+  }
+  cout << endl;
 }
